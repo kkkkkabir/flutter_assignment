@@ -45,6 +45,10 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(
+              "Flutter UI Design",
+              style: TextStyle(fontSize: 40),
+            ),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
