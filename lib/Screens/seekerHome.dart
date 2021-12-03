@@ -183,7 +183,6 @@ class _SeekerHomeState extends State<SeekerHome> {
                           child: SizedBox(
                             height: MediaQuery.of(context).size.height,
                             child: ListView.builder(
-                                scrollDirection: Axis.vertical,
                                 itemCount: 10,
                                 itemBuilder: (context, index) {
                                   return const VerticalJobCard();
