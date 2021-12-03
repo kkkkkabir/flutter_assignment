@@ -26,7 +26,7 @@ class VerticalJobCard extends StatelessWidget {
                       fontWeight: FontWeight.bold)),
               const SizedBox(height: 10.0),
               Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     width: 65,
@@ -43,37 +43,37 @@ class VerticalJobCard extends StatelessWidget {
                         child: Text(
                           "Full Time",
                           style:
-                              TextStyle(fontSize: 10, color: _primaryTextColor),
+                              TextStyle(fontSize: 8, color: _primaryTextColor),
                         ),
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    width: 20.0,
-                  ),
-                  RichText(
-                    // ignore: prefer_const_literals_to_create_immutables
-                    text: TextSpan(children: [
-                      TextSpan(
-                          text: "Salary ",
-                          style: TextStyle(
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: RichText(
+                      // ignore: prefer_const_literals_to_create_immutables
+                      text: TextSpan(children: [
+                        TextSpan(
+                            text: "Salary ",
+                            style: TextStyle(
+                                fontSize: 13,
+                                color: _primaryTextColor,
+                                fontWeight: FontWeight.bold)),
+                        TextSpan(
+                            text: "upto ",
+                            style: TextStyle(
                               fontSize: 13,
                               color: _primaryTextColor,
-                              fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: "upto ",
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: _primaryTextColor,
-                            fontFamily: 'Aeonik-Light',
-                          )),
-                      TextSpan(
-                          text: "\u20B915000/month",
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: _primaryTextColor,
-                          )),
-                    ]),
+                              fontFamily: 'Aeonik-Light',
+                            )),
+                        TextSpan(
+                            text: "\u20B915000/month",
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: _primaryTextColor,
+                            )),
+                      ]),
+                    ),
                   ),
                 ],
               ),
@@ -84,42 +84,45 @@ class VerticalJobCard extends StatelessWidget {
                 padding: const EdgeInsets.only(
                   right: 10.0,
                 ),
-                child: Row(children: [
-                  RichText(
-                      // ignore: prefer_const_literals_to_create_immutables
-                      text: TextSpan(
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      TextSpan(
-                          text: "Badonia & Sons\n",
-                          style: TextStyle(
-                              fontSize: 17,
-                              color: _primaryTextColor,
-                              fontWeight: FontWeight.bold)),
-                      TextSpan(
-                          text: "Civil lines, Sagar",
-                          style: TextStyle(
-                            fontSize: 13,
-                            color: _primaryTextColor,
-                            fontFamily: 'Aeonik-Light',
-                          )),
-                    ],
-                  )),
-                  const SizedBox(
-                    width: 60.0,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {},
-                    child: const Text(
-                      "Apply Now",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w300,
+                      RichText(
+                          // ignore: prefer_const_literals_to_create_immutables
+                          text: TextSpan(
+                        children: [
+                          TextSpan(
+                              text: "Badonia & Sons\n",
+                              style: TextStyle(
+                                  fontSize: 17,
+                                  color: _primaryTextColor,
+                                  fontWeight: FontWeight.bold)),
+                          TextSpan(
+                              text: "Civil lines, Sagar",
+                              style: TextStyle(
+                                fontSize: 13,
+                                color: _primaryTextColor,
+                                fontFamily: 'Aeonik-Light',
+                              )),
+                        ],
+                      )),
+                      const SizedBox(
+                        width: 60.0,
                       ),
-                    ),
-                    style: ButtonStyle(
-                        shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8.0)))),
-                  )
-                ]),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: const Text(
+                          "Apply Now",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w300,
+                          ),
+                        ),
+                        style: ButtonStyle(
+                            shape: MaterialStateProperty.all(
+                                RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(8.0)))),
+                      )
+                    ]),
               ),
             ]),
           ),

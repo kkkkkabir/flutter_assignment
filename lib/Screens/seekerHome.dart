@@ -56,6 +56,7 @@ class _SeekerHomeState extends State<SeekerHome> {
                             padding: EdgeInsets.only(right: 20.0),
                             child: CircleAvatar(
                               radius: 35,
+                              backgroundColor: Colors.transparent,
                               backgroundImage:
                                   AssetImage('lib/images/profile_app.png'),
                             ),

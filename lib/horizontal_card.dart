@@ -42,7 +42,7 @@ class HorizontalJobCard extends StatelessWidget {
                         child: Text(
                           "Full Time",
                           style:
-                              TextStyle(fontSize: 10, color: _primaryTextColor),
+                              TextStyle(fontSize: 8, color: _primaryTextColor),
                         ),
                       ),
                     ),
