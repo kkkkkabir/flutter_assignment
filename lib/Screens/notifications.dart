@@ -182,7 +182,7 @@ class Notifications extends StatelessWidget {
                             Text(
                               "Yesterday",
                               style:
-                                  TextStyle(fontSize: 18, color: Colors.grey),
+                                  TextStyle(fontSize: 15, color: Colors.grey),
                             )
                           ],
                         ),
