@@ -117,7 +117,7 @@ class PostAd extends StatelessWidget {
                                 ),
                               )),
                               SizedBox(
-                                height: 70.0,
+                                height: 100.0,
                               ),
                               Text(
                                 "By Submitting This Advertisement, You Agree To Share Your Contact Details with Customers and Employers on the Hyre Me Platform.",
@@ -128,7 +128,7 @@ class PostAd extends StatelessWidget {
                               ),
                               SizedBox(
                                 width: 400,
-                                height: 55,
+                                height: 60,
                                 child: ElevatedButton(
                                     style: ButtonStyle(
                                         backgroundColor:

@@ -122,7 +122,7 @@ class _HistoryState extends State<History> {
                                                                         8.0)))),
                                             onPressed: () {},
                                             child: Text("Full Time",
-                                                style: TextStyle(fontSize: 11)),
+                                                style: TextStyle(fontSize: 8)),
                                           ))
                                     ],
                                   ),
