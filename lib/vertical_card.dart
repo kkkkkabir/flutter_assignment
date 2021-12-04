@@ -32,7 +32,6 @@ class VerticalJobCard extends StatelessWidget {
                     width: 65,
                     height: 22,
                     decoration: BoxDecoration(
-                        color: Colors.grey[50],
                         border:
                             Border.all(width: 1.0, color: _primaryTextColor),
                         borderRadius:

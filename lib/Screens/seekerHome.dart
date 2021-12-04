@@ -177,7 +177,7 @@ class _SeekerHomeState extends State<SeekerHome> {
                         padding: const EdgeInsets.only(right: 20.0),
                         child: Container(
                           decoration: BoxDecoration(
-                              color: Colors.red[50],
+                              color: Colors.grey[100],
                               borderRadius: const BorderRadius.only(
                                   topLeft: Radius.circular(15.0),
                                   topRight: Radius.circular(15.0))),
