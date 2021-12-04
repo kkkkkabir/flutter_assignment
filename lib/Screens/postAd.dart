@@ -70,11 +70,18 @@ class PostAd extends StatelessWidget {
                                       decoration: InputDecoration(
                                     filled: true,
                                     fillColor: Colors.grey[100],
-                                    border: InputBorder.none,
-                                    focusedBorder: InputBorder.none,
-                                    enabledBorder: InputBorder.none,
+                                    enabledBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    focusedBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
                                     errorBorder: InputBorder.none,
-                                    disabledBorder: InputBorder.none,
                                     hintText: "Name of Your Service",
                                   )),
                                   SizedBox(
@@ -84,11 +91,18 @@ class PostAd extends StatelessWidget {
                                       decoration: InputDecoration(
                                     filled: true,
                                     fillColor: Colors.grey[100],
-                                    border: InputBorder.none,
-                                    focusedBorder: InputBorder.none,
-                                    enabledBorder: InputBorder.none,
+                                    enabledBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(10),
+                                    ),
+                                    focusedBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
                                     errorBorder: InputBorder.none,
-                                    disabledBorder: InputBorder.none,
                                     hintText: "Service Area",
                                     suffixIcon: IconButton(
                                       icon: Icon(
@@ -105,11 +119,18 @@ class PostAd extends StatelessWidget {
                                       decoration: InputDecoration(
                                     filled: true,
                                     fillColor: Colors.grey[100],
-                                    border: InputBorder.none,
-                                    focusedBorder: InputBorder.none,
-                                    enabledBorder: InputBorder.none,
+                                    enabledBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
+                                    border: OutlineInputBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(10)),
+                                    focusedBorder: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                        borderSide: BorderSide(
+                                            color: Colors.transparent)),
                                     errorBorder: InputBorder.none,
-                                    disabledBorder: InputBorder.none,
                                     hintText: "Field of Work",
                                     suffixIcon: IconButton(
                                       icon: Icon(

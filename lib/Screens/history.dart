@@ -151,7 +151,11 @@ class _HistoryState extends State<History> {
                                         )
                                       else
                                         SizedBox(
-                                          width: 95,
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width /
+                                              2 /
+                                              2.5,
                                         ),
                                     ],
                                   ),
