@@ -151,7 +151,7 @@ class _HistoryState extends State<History> {
                                         )
                                       else
                                         SizedBox(
-                                          width: 70,
+                                          width: 80,
                                         ),
                                     ],
                                   ),
