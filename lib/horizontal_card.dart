@@ -21,7 +21,7 @@ class HorizontalJobCard extends StatelessWidget {
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Text("Interior Carpet Designer",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 16,
                       color: _primaryTextColor,
                       fontWeight: FontWeight.bold)),
               Row(
