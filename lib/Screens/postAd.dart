@@ -8,142 +8,150 @@ class PostAd extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-            resizeToAvoidBottomInset: false,
             backgroundColor: Colors.white,
             body: Container(
                 padding: const EdgeInsets.only(top: 40.0, left: 20.0),
                 child: Column(
                   children: [
                     Expanded(
-                      child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          // ignore: prefer_const_literals_to_create_immutables
-                          children: [
-                            RichText(
-                                // ignore: prefer_const_literals_to_create_immutables
-                                text: TextSpan(children: [
-                              TextSpan(
-                                  text: "Post An\n",
-                                  style: TextStyle(
+                      child: SingleChildScrollView(
+                        child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisSize: MainAxisSize.max,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              RichText(
+                                  // ignore: prefer_const_literals_to_create_immutables
+                                  text: TextSpan(children: [
+                                TextSpan(
+                                    text: "Post An\n",
+                                    style: TextStyle(
+                                        fontSize: 40,
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold)),
+                                TextSpan(
+                                    text: "Advertisement.",
+                                    style: TextStyle(
                                       fontSize: 40,
                                       color: Colors.black,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: "Advertisement.",
-                                  style: TextStyle(
-                                    fontSize: 40,
-                                    color: Colors.black,
-                                  )),
-                            ])),
-                            Center(
-                              child: Image.asset(
-                                'lib/images/advert.png',
-                                width: 300,
-                                height: 200,
+                                    )),
+                              ])),
+                              Center(
+                                child: Image.asset(
+                                  'lib/images/advert.png',
+                                  width: 300,
+                                  height: 200,
+                                ),
                               ),
-                            ),
-                            RichText(
-                                // ignore: prefer_const_literals_to_create_immutables
-                                text: TextSpan(children: [
-                              TextSpan(
-                                  text: "Reach more Customers and Employers!\n",
-                                  style: TextStyle(
-                                    fontSize: 13,
-                                    color: Colors.black,
-                                  )),
-                              TextSpan(
-                                  text: "Start by posting Your Service Ad.",
-                                  style: TextStyle(
+                              RichText(
+                                  // ignore: prefer_const_literals_to_create_immutables
+                                  text: TextSpan(children: [
+                                TextSpan(
+                                    text:
+                                        "Reach more Customers and Employers!\n",
+                                    style: TextStyle(
                                       fontSize: 13,
                                       color: Colors.black,
-                                      fontWeight: FontWeight.bold)),
-                            ])),
-                            SizedBox(
-                              height: 30.0,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 20.0),
-                              child: Column(
-                                children: [
-                                  TextField(
-                                      decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.grey[100],
-                                    enabledBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    focusedBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    errorBorder: InputBorder.none,
-                                    hintText: "Name of Your Service",
-                                  )),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  TextField(
-                                      decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.grey[100],
-                                    enabledBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    focusedBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    errorBorder: InputBorder.none,
-                                    hintText: "Service Area",
-                                    suffixIcon: IconButton(
-                                      icon: Icon(
-                                        Icons.keyboard_arrow_down_sharp,
-                                        size: 35,
-                                      ),
-                                      onPressed: () {},
-                                    ),
-                                  )),
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  TextField(
-                                      decoration: InputDecoration(
-                                    filled: true,
-                                    fillColor: Colors.grey[100],
-                                    enabledBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    border: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(10)),
-                                    focusedBorder: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(10),
-                                        borderSide: BorderSide(
-                                            color: Colors.transparent)),
-                                    errorBorder: InputBorder.none,
-                                    hintText: "Field of Work",
-                                    suffixIcon: IconButton(
-                                      icon: Icon(
-                                        Icons.keyboard_arrow_down_sharp,
-                                        size: 35,
-                                      ),
-                                      onPressed: () {},
-                                    ),
-                                  )),
-                                ],
+                                    )),
+                                TextSpan(
+                                    text: "Start by posting Your Service Ad.",
+                                    style: TextStyle(
+                                        fontSize: 13,
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold)),
+                              ])),
+                              SizedBox(
+                                height: 30.0,
                               ),
-                            ),
-                          ]),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 20.0),
+                                child: Column(
+                                  children: [
+                                    TextField(
+                                        decoration: InputDecoration(
+                                      filled: true,
+                                      fillColor: Colors.grey[100],
+                                      enabledBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      errorBorder: InputBorder.none,
+                                      hintText: "Name of Your Service",
+                                    )),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    TextField(
+                                        decoration: InputDecoration(
+                                      filled: true,
+                                      fillColor: Colors.grey[100],
+                                      enabledBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      errorBorder: InputBorder.none,
+                                      hintText: "Service Area",
+                                      suffixIcon: IconButton(
+                                        icon: Icon(
+                                          Icons.keyboard_arrow_down_sharp,
+                                          size: 35,
+                                        ),
+                                        onPressed: () {},
+                                      ),
+                                    )),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    TextField(
+                                        decoration: InputDecoration(
+                                      filled: true,
+                                      fillColor: Colors.grey[100],
+                                      enabledBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      border: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10)),
+                                      focusedBorder: OutlineInputBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          borderSide: BorderSide(
+                                              color: Colors.transparent)),
+                                      errorBorder: InputBorder.none,
+                                      hintText: "Field of Work",
+                                      suffixIcon: IconButton(
+                                        icon: Icon(
+                                          Icons.keyboard_arrow_down_sharp,
+                                          size: 35,
+                                        ),
+                                        onPressed: () {},
+                                      ),
+                                    )),
+                                  ],
+                                ),
+                              ),
+                            ]),
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 20.0, right: 20.0),
